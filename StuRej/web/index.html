@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Course Registration</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark">SC</div>
+    <div><p class="eyebrow">Academic services</p><h1>Student Course Registration</h1></div>
+    <span class="online"><i></i> System online</span>
+  </header>
+  <main>
+    <section class="hero">
+      <div><p class="eyebrow accent">Course planning / 2026</p><h2>Build a schedule<br><em>that works for you.</em></h2><p class="intro">Browse open classes, reserve a seat, and keep your semester moving.</p></div>
+      <div class="hero-note"><strong id="courseCount">--</strong><span>courses available</span><hr><strong>6</strong><span>sample students</span></div>
+    </section>
+    <section class="workspace">
+      <div class="toolbar"><div><p class="eyebrow">Course catalog</p><h3>Available courses</h3></div><label class="student-picker">Your student ID<select id="studentId"><option value="S001">S001 · Aisha Khan</option><option value="S002">S002 · Daniel Lee</option><option value="S003">S003 · Maya Patel</option><option value="S004">S004 · Ethan Williams</option><option value="S005">S005 · Sofia Garcia</option><option value="S006">S006 · Noah Johnson</option></select></label></div>
+      <div id="status" class="status" role="status"></div>
+      <div id="courses" class="course-grid"><div class="loading">Loading course catalog...</div></div>
+    </section>
+    <section class="registered-section"><div class="toolbar"><div><p class="eyebrow">Your workspace</p><h3>Registered courses</h3></div><button id="refresh" class="text-button" type="button">Refresh list <span>↗</span></button></div><div id="registered" class="registered-list"><div class="loading">Select a student to view registrations.</div></div></section>
+  </main>
+  <footer>Student Course Registration System <span>·</span> Java backend connected</footer>
+  <script src="app.js"></script>
+</body>
+</html>
